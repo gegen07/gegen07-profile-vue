@@ -18,7 +18,7 @@
               Germano Barcelos
             </h2>
             <p class="headline font-weight-light">
-              Technician in analysis and development of systems
+              Desenvolvedor Backend e Aspirante em Ciência de Dados
             </p>
           </v-flex>
           <v-flex xs1>
