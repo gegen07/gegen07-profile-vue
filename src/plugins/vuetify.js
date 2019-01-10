@@ -9,5 +9,5 @@ Vue.use(Vuetify, {
     secondary: '#009688',
     accent: '#ff9800'
   },
-  iconfont: 'fa4'
+  iconfont: 'fa'
 })
