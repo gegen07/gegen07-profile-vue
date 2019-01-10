@@ -21,14 +21,14 @@
           <v-list-tile
             v-for="(item, index) in items"
             :key="index"
-            @click="$vuetify.goTo(item.id, { offset: -100 })"
+            @click="$vuetify.goTo(item.id, { offset: -75 })"
           >
             <v-list-tile-title>{{ item.title }}</v-list-tile-title>
           </v-list-tile>
         </v-list>
       </v-menu>
-      <v-btn class="grey--text text--lighten-3" flat>Experiências</v-btn>
-      <v-btn class="grey--text text--lighten-3" flat>Habilidades</v-btn>
+      <v-btn class="grey--text text--lighten-3" @click="$vuetify.goTo('#experience', { offset: -100 })" flat>Experiências</v-btn>
+      <v-btn class="grey--text text--lighten-3" @click="$vuetify.goTo('#skills', { offset: +25 })" flat>Habilidades</v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>
