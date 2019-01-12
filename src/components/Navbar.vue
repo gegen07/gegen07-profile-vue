@@ -5,7 +5,7 @@
       <v-toolbar-title @click="$vuetify.goTo('#landing', { offset: -100 })" class="grey--text text--lighten-3">Germano Barcelos</v-toolbar-title>
       </router-link>
     <v-spacer></v-spacer>
-    <v-toolbar-items class="fill-height">
+    <v-toolbar-items class="fill-height hidden-sm-and-down">
       <v-menu bottom>
         <v-btn
           slot="activator"

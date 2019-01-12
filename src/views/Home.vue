@@ -1,10 +1,16 @@
 <template>
   <v-content>
-    <Home id="landing"/>
-    <Education id="education"/>
-    <Extra id="extra-education"/>
-    <Experience id="experience"/>
-    <Skills id="skills"/>
+    <v-container>
+      <v-layout>
+        <v-flex xs12>
+          <Home id="landing"/>
+          <Education id="education"/>
+          <Extra id="extra-education"/>
+          <Experience id="experience"/>
+          <Skills id="skills"/>
+        </v-flex>
+      </v-layout>
+    </v-container>
   </v-content>
 </template>
 

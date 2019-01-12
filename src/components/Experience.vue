@@ -1,7 +1,7 @@
 <template>
   <v-content>
-    <v-container>
-      <p class="display-2" color="brown">Experiência Profissional</p>
+    <v-container class="hidden-xs-only">
+      <p class="display-1" color="brown">Experiência Profissional</p>
       <v-timeline>
         <v-timeline-item
           color="indigo lighten-2"
@@ -18,6 +18,21 @@
           </v-card>
         </v-timeline-item>
       </v-timeline>
+    </v-container>
+
+    <v-container class="hidden-sm-and-up">
+      <p class="display-1">Experiência Profissional</p>
+      <v-card class="elevation-2">
+        <v-container>
+          <v-layout row wrap>
+            <v-card-title class="headline">Progetec - Estágio</v-card-title>
+            <v-card-text class="body-1 font-weight-light">2018 - 6 meses</v-card-text>
+            <v-card-text class="text-xs-justify">
+              Trabalhei com C# para transformar o sistema Desktop para sistema web. Para isso tive que arquiteturar o sistema com o DDD. Também desenvolvi os códigos do SQLServer utilizando a ferramenta de migrations a partir dos domínios definidos.
+            </v-card-text>
+          </v-layout>
+        </v-container>
+      </v-card>
     </v-container>
   </v-content>
 </template>
