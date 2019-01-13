@@ -28,6 +28,12 @@
         "description" : "Courses without Certificate",
         "c1-specialization-DSA": "Data Structure and Algorithms Specialization - University of California, San Diego & National Research University Higher School of Economics"
       }
+    },
+    "languages": {
+      "description": "Languages",
+      "pt_br": "Portuguese (BR)",
+      "en_US": "English",
+      "text": "Good Understanding, Good Reading, Good Speaking, Good Writing"
     }
   }, 
   "experience": {

@@ -28,6 +28,12 @@
         "description" : "Cursos sem Certificado",
         "c1-specialization-DSA": "Especialização em Estruturas de Dados e Algoritmos - Universidade da Califórnia, San Diego & National Research University Higher School of Economics"
       }
+    },
+    "languages": {
+      "description": "Idiomas",
+      "pt_br": "Português",
+      "en_US": "Inglês",
+      "text": "Compreende Bem, Lê Bem, Fala Bem, Escreve Bem"
     }
   }, 
   "experience": {

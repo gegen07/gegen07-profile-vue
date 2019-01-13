@@ -6,6 +6,7 @@
           <Home id="landing"/>
           <Education id="education"/>
           <Extra id="extra-education"/>
+          <languages id="languages" />
           <Experience id="experience"/>
           <Skills id="skills"/>
         </v-flex>
@@ -18,6 +19,7 @@
 import Home from '@/components/Home.vue'
 import Education from '@/components/Education.vue'
 import Extra from '@/components/Extra.vue'
+import Languages from '@/components/Languages.vue'
 import Experience from '@/components/Experience.vue'
 import Skills from '@/components/Skills.vue'
 export default {
@@ -26,6 +28,7 @@ export default {
     Home,
     Education,
     Extra,
+    Languages,
     Experience,
     Skills
   }
