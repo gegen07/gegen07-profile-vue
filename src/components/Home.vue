@@ -1,10 +1,10 @@
 <template>
   <v-content>
-    <v-container fluid justify-center grid-list-md text-xs-center fill-height>
+    <v-container fluid justify-center grid-list-xs text-xs-center fill-height>
       <v-layout
         align-center justify-center row wrap
       >
-        <v-flex xs12 xl1>
+        <v-flex xs12>
           <v-avatar
             :tile="false"
             :size="256"
@@ -18,7 +18,7 @@
             Germano Barcelos
           </h2>
           <p class="headline font-weight-light">
-            Desenvolvedor Backend e Aspirante em Ciência de Dados
+            {{ $t("home.description") }}
           </p>
         </v-flex>
         <v-flex xs2 sm1>

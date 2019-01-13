@@ -1,18 +1,18 @@
 <template>
   <v-content>
     <v-container class="hidden-xs-only">
-      <p class="display-1" color="brown">Experiência Profissional</p>
+      <p class="display-1" color="brown">{{ $t("experience.description") }}</p>
       <v-timeline>
         <v-timeline-item
           color="indigo lighten-2"
           medium
         >
-          <span class="headline" slot="opposite">6 meses - 2018</span>
+          <span class="headline" slot="opposite">{{ $t("experience.exp1.time") }}</span>
           <v-card class="elevation-2">
             <v-container>
-              <v-card-title class="headline">Progetec - Estágio</v-card-title>
+              <v-card-title class="headline">{{ $t("experience.exp1.name") }}</v-card-title>
               <v-card-text class="text-xs-justify">
-                Trabalhei com C# para transformar o sistema Desktop para sistema web. Para isso tive que arquiteturar o sistema com o DDD. Também desenvolvi os códigos do SQLServer utilizando a ferramenta de migrations a partir dos domínios definidos.
+                {{ $t("experience.exp1.description") }}
               </v-card-text>
             </v-container>
           </v-card>
@@ -25,10 +25,10 @@
       <v-card class="elevation-2">
         <v-container>
           <v-layout row wrap>
-            <v-card-title class="headline">Progetec - Estágio</v-card-title>
-            <v-card-text class="body-1 font-weight-light">2018 - 6 meses</v-card-text>
+            <v-card-title class="headline">{{ $t("experience.exp1.name") }}</v-card-title>
+            <v-card-text class="body-1 font-weight-light">{{ $t("experience.exp1.time") }}</v-card-text>
             <v-card-text class="text-xs-justify">
-              Trabalhei com C# para transformar o sistema Desktop para sistema web. Para isso tive que arquiteturar o sistema com o DDD. Também desenvolvi os códigos do SQLServer utilizando a ferramenta de migrations a partir dos domínios definidos.
+              {{ $t("experience.exp1.description") }}
             </v-card-text>
           </v-layout>
         </v-container>

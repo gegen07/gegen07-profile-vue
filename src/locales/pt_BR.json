@@ -1,0 +1,41 @@
+{
+  "navbar": {
+    "link-education": {
+      "name": "Educação",
+      "link-academic": "Formação Acadêmica",
+      "link-extra": "Formação Extra"
+    },
+    "link-experience": "Experiência",
+    "link-skills": "Habilidades"
+  },
+  "home": {
+    "description": "Desenvolvedor Backend e Aspirante em Ciência de Dados"
+  },
+  "education": {
+    "academic": {
+      "description": "Formação Acadêmica",
+      "grade-course": "Ciência da Computação - PUC Minas",
+      "high-school-grade": "Técnico em Análise e Desenvolvimento de Sistemas - COLTEC/UFMG"
+    },
+    "extra": {
+      "description": "Formação Extra",
+      "btn1-see": "Ver Certificado",
+      "btn2-github": "Github",
+      "btn3-more": "Ver Mais",
+      "btn4-less": "Ver Menos",
+      "with-certificate": "Cursos com Certificado",
+      "no-certificate": {
+        "description" : "Cursos sem Certificado",
+        "c1-specialization-DSA": "Especialização em Estruturas de Dados e Algoritmos - Universidade da Califórnia, San Diego & National Research University Higher School of Economics"
+      }
+    }
+  }, 
+  "experience": {
+    "description": "Experiência Profissional",
+    "exp1": {
+      "name": "Progetec - Estágio",
+      "time": "6 meses - 2018",
+      "description": "Trabalhei com C# para transformar o sistema Desktop para sistema web. Para isso tive que arquitetei o sistema com o DDD. Também desenvolvi os códigos do SQLServer utilizando a ferramenta de migrations a partir dos domínios definidos. A infraestrutura foi desenvolvida com Docker e Plataforma da Google Cloud."
+    }
+  }
+}

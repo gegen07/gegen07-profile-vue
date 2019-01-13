@@ -3,7 +3,7 @@
     <v-container>
       <v-card>
         <v-container>
-          <v-card-title class="display-1" color="brown">Habilidades</v-card-title>
+          <v-card-title class="display-1" color="brown">{{ $t("navbar.link-skills")  }}</v-card-title>
           <v-flex
             v-for="(item, i) in items"
             :key="i"

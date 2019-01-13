@@ -1,0 +1,40 @@
+{
+  "navbar": {
+    "link-education": {
+      "name": "Education",
+      "link-academic": "Academic Education",
+      "link-extra": "Extra Academic"
+    },
+    "link-experience": "Experience",
+    "link-skills": "Skills"
+  },
+  "home": {
+    "description": "Backend Developer and aspirant in Data Science"
+  },
+  "education": {
+    "academic": {
+      "description": "Academic Education",
+      "grade-course": "Computer Science - PUC Minas",
+      "high-school-grade": "Technician in analysis and development of systems - COLTEC/UFMG"
+    },
+    "extra": {
+      "description": "Extra Education",
+      "btn1-see": "See Certificate",
+      "btn2-github": "Github",
+      "btn3-more": "Show More",
+      "btn4-less": "Show Less",
+      "with-certificate": "Courses with Certificate",
+      "no-certificate": {
+        "description" : "Courses without Certificate",
+        "c1-specialization-DSA": "Data Structure and Algorithms Specialization - University of California, San Diego & National Research University Higher School of Economics"
+      }
+    }
+  }, 
+  "experience": {
+    "exp1": {
+      "name": "Progetec - Internship",
+      "time": "6 months - 2018",
+      "description": "I worked with C# to change desktop platform of Progetec to Web System. To conclude this project I have to architect the system with DDD, besides that I developed SQLServer code using migrations and ASP.Net Core. The infrastructure was developed with Docker and Google Cloud Platform."
+    }
+  }
+}
