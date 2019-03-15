@@ -14,7 +14,10 @@
   "education": {
     "academic": {
       "description": "Formação Acadêmica",
-      "grade-course": "Ciência da Computação - PUC Minas",
+      "grade-course": {
+        "description": "Ciência da Computação / UFV-CAF", 
+        "time": "2019 - Presente"
+      },
       "high-school-grade": "Técnico em Análise e Desenvolvimento de Sistemas - COLTEC/UFMG"
     },
     "extra": {

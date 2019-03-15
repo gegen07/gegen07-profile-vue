@@ -9,12 +9,15 @@
     "link-skills": "Skills"
   },
   "home": {
-    "description": "Backend Developer and aspirant in Data Science"
+    "description": "Backend Developer and Aspirant in Data Science"
   },
   "education": {
     "academic": {
       "description": "Academic Education",
-      "grade-course": "Computer Science - PUC Minas",
+      "grade-course": {
+        "description": "Computer Science / UFV-CAF", 
+        "time": "2019 - Present"
+      },
       "high-school-grade": "Technician in analysis and development of systems - COLTEC/UFMG"
     },
     "extra": {

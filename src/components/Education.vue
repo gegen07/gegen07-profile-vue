@@ -7,10 +7,10 @@
           color="indigo lighten-2"
           medium
         >
-          <span class="headline" slot="opposite">2019 - 2023</span>
+          <span class="headline" slot="opposite">{{ $t("education.academic.grade-course.time") }}</span>
           <v-card class="elevation-2">
             <v-container>
-              <v-card-title class="headline">{{ $t("education.academic.grade-course")  }}</v-card-title>
+              <v-card-title class="headline">{{ $t("education.academic.grade-course.description")  }}</v-card-title>
             </v-container>
           </v-card>
         </v-timeline-item>
