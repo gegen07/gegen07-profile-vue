@@ -6,12 +6,8 @@ jobs:
       - image: circleci/node:latest
     steps:
       - checkout
-      - run:
-        name: "Installing dependencies"
-        command: "npm install"
-      - run:
-        name: "Building the project"
-        command: "npm run build"
+      - run: npm install
+      - run: npm run build
       - persist_to_workspace:
         root: dist/
         paths: .
