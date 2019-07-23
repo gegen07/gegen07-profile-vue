@@ -1,7 +1,7 @@
 <template>
   <v-content>
     <v-container class="hidden-xs-only">
-      <p class="display-1" color="brown">{{ $t("experience.description") }}</p>
+      <p class="display-1" color="brown">{{ $t("experience.exp1.description") }}</p>
       <v-timeline>
         <v-timeline-item
           color="indigo lighten-2"
