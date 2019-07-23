@@ -29,7 +29,8 @@ jobs:
             git config user.email "gegenbarcelos@gmail.com"
             git config user.name "gegen07"
       - run:
-          command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+          name: Avoid hosts unknown for github
+          command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - add_ssh_keys:
           fingerprints:
             - "e4:cd:53:d5:40:fa:a6:8a:20:88:86:52:e6:fe:3d:f3"
