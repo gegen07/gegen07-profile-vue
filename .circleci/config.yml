@@ -20,10 +20,10 @@ jobs:
       - attach_workspace:
           at: dist/
       - run:
-        name: "Disable jekyll builds"
+        name: Disable jekyll builds
         command: touch .nojekyll
       - run:
-        name: "Install and configure dependencies"
+        name: Install and configure dependencies
         command: |
           npm install -g --silent gh-pages@2.0.1
           git config user.email "gegenbarcelos@gmail.com"
@@ -32,7 +32,7 @@ jobs:
           fingerprints:
             - "e4:cd:53:d5:40:fa:a6:8a:20:88:86:52:e6:fe:3d:f3"
       - run:
-          name: "Deploy docs to gh-pages branch"
+          name: Deploy docs to gh-pages branch
           command: gh-pages --dotfiles --message "[skip ci] Updates" --dist dist/
 workflows:
   version: 2
