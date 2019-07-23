@@ -38,14 +38,12 @@ export default {
   name: 'skills',
   data: () => ({
     items: [
-      { skill: 'Android/Java', star: 8, icon: 'fab fa-android' },
       { skill: 'SQL', star: 8, icon: 'fas fa-database' },
-      { skill: 'Docker', star: 7, icon: 'fab fa-docker' },
+      { skill: 'MongoDB', star: 7, icon: 'fas fa-database' },
+      { skill: 'Docker', star: 8, icon: 'fab fa-docker' },
       { skill: 'Javascript', star: 7, icon: 'fab fa-js' },
-      { skill: 'Php', star: 7, icon: 'fab fa-php' },
-      { skill: 'Golang', star: 6, icon: 'fas fa-terminal' },
-      { skill: 'MongoDB', star: 6, icon: 'fas fa-database' },
-      { skill: 'C', star: 6, icon: 'fas fa-terminal' }
+      { skill: 'Golang', star: 7, icon: 'fas fa-terminal' },
+      { skill: 'C', star: 7, icon: 'fas fa-terminal' }
     ]
   })
 }

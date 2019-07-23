@@ -1,11 +1,13 @@
 <template>
   <v-toolbar color="primary" fixed app>
-    <!-- <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon> -->
     <router-link to="/">
       <v-toolbar-title @click="$vuetify.goTo('#landing', { offset: -100 })" class="grey--text text--lighten-3">Germano Barcelos</v-toolbar-title>
     </router-link>
     <v-spacer></v-spacer>
     <v-toolbar-items class="fill-height">
+      <v-btn class="grey--text text--lighten-3" flat target="_blank" v-bind:href="linkCV()">
+        CV
+      </v-btn>
       <v-btn
         color="primary"
         dark
@@ -60,6 +62,16 @@ export default {
   methods: {
     changeLocale (item) {
       this.$i18n.locale = item.id
+    },
+    linkCV: function () {
+      const cvEN = 'https://drive.google.com/open?id=1rkQ3Hsk9yx1dcKVC1We9qaqDlUMSKbeQ'
+      const cvPT = 'https://drive.google.com/open?id=1OQvs40bzM90_-gs3S0rtXJW3Lue9of8l'
+
+      if (this.$i18n.locale === 'pt_BR') {
+        return cvPT
+      } else {
+        return cvEN
+      }
     }
   },
   computed: {

@@ -1,7 +1,7 @@
 <template>
   <v-content>
     <v-container class="hidden-xs-only">
-      <p class="display-1" color="brown">{{ $t("experience.exp1.description") }}</p>
+      <p class="display-1" color="brown">{{ $t("experience.description") }}</p>
       <v-timeline>
         <v-timeline-item
           color="indigo lighten-2"
@@ -21,7 +21,7 @@
     </v-container>
 
     <v-container class="hidden-sm-and-up">
-      <p class="display-1">Experiência Profissional</p>
+      <p class="display-1"> {{ $t("experience.description") }} </p>
       <v-card class="elevation-2">
         <v-container>
           <v-layout row wrap>

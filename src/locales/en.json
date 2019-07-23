@@ -40,6 +40,7 @@
     }
   }, 
   "experience": {
+    "description": "Work Experience",
     "exp1": {
       "name": "Progetec - Internship",
       "time": "6 months - 2018",

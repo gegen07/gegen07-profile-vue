@@ -23,14 +23,6 @@
         </v-flex>
         <v-flex xs2 sm1>
           <v-tooltip bottom>
-            <v-btn slot="activator" href="https://medium.com/@germanobarcelos/publications" icon large target="_blank">
-              <i class="fab fa-medium-m fa-2x"></i>
-            </v-btn>
-            <span>Medium</span>
-          </v-tooltip>
-        </v-flex>
-        <v-flex xs2 sm1>
-          <v-tooltip bottom>
             <v-btn slot="activator" href="https://www.linkedin.com/in/germano-b-534b6a138/" icon large target="_blank">
               <i class="fab fa-linkedin-in fa-2x"></i>
             </v-btn>
