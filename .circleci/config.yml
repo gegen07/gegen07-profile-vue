@@ -14,6 +14,8 @@ jobs:
         command: npm run build
       - persist_to_workspace:
         root: dist/
+        paths: .
+
   "app-deploy":
     docker:
       - image: circle/node:latest
@@ -25,7 +27,7 @@ jobs:
         name: "Disable jekyll builds"
         command: touch .nojekyll
       - run:
-        name: Install and configure dependencies
+        name: "Install and configure dependencies"
         command: |
           npm install -g --silent gh-pages@2.0.1
           git config user.email "gegenbarcelos@gmail.com"
