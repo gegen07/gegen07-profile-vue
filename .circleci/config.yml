@@ -28,9 +28,11 @@ jobs:
             sudo npm install -g --silent gh-pages@2.0.1
             git config user.email "gegenbarcelos@gmail.com"
             git config user.name "gegen07"
+      - run:
+          command: ssh-keyscan -H <host> >> ~/.ssh/known_hosts
       - add_ssh_keys:
           fingerprints:
-            - "cb:39:15:80:52:bb:a5:c9:3b:77:39:07:53:3f:28:f6"
+            - "e4:cd:53:d5:40:fa:a6:8a:20:88:86:52:e6:fe:3d:f3"
       - run:
             name: Deploy docs to gh-pages branch
             command: sudo gh-pages --dotfiles --message "[skip ci] Updates" --dist dist/
