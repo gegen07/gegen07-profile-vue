@@ -53,6 +53,3 @@ workflows:
       - app-deploy:
           requires:
             - build-app
-           branches:
-      only:
-        - master
