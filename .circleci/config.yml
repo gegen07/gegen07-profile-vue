@@ -41,7 +41,7 @@ jobs:
               git add -A
               git commit -m 'deploy'
 
-              git push -f git@github.com:gegen07/gegen07.github.io.git gh-pages
+              git push --set-upstream git@github.com:gegen07/gegen07.github.io.git gh-pages
 workflows:
   version: 2
   build:
@@ -49,7 +49,4 @@ workflows:
       - "build-app"
       - app-deploy:
           requires:
-            - build-app
-          filters:
-            branches:
-              only: master
+            - build-app 
