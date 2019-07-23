@@ -25,8 +25,8 @@ jobs:
       - run:
           name: Install and configure dependencies
           command: |
-            git config user.email "gegenbarcelos@gmail.com"
-            git config user.name "gegen07"
+            git config --global user.email "gegenbarcelos@gmail.com"
+            git config --global user.name "gegen07"
       - run:
           name: Avoid hosts unknown for github
           command: echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
