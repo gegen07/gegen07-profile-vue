@@ -14,7 +14,7 @@ jobs:
 
   "app-deploy":
     docker:
-      - image: circle/node:latest
+      - image: circleci/node:latest
     steps:
       - checkout
       - attach_workspace:
