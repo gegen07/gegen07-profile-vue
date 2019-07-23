@@ -6,8 +6,12 @@ jobs:
       - image: circleci/node:latest
     steps:
       - checkout
-      - run: "npm install"
-      - run: "npm run build"
+      - run:
+        name: "Installing dependencies"
+        command: npm install
+      - run:
+        name: "Building the project"
+        command: npm run build
       - persist_to_workspace:
         root: dist/
   "app-deploy":
@@ -18,7 +22,7 @@ jobs:
       - attach_workspace:
         at: dist/
       - run:
-        name: Disable jekyll builds
+        name: "Disable jekyll builds"
         command: touch .nojekyll
       - run:
         name: Install and configure dependencies
@@ -30,7 +34,7 @@ jobs:
         fingerprints:
           - "e4:cd:53:d5:40:fa:a6:8a:20:88:86:52:e6:fe:3d:f3"
       - run:
-        name: Deploy docs to gh-pages branch
+        name: "Deploy docs to gh-pages branch"
         command: gh-pages --dotfiles --message "[skip ci] Updates" --dist dist/
 workflows:
   version: 2
