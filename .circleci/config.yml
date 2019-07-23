@@ -53,4 +53,4 @@ workflows:
             - build-app
           filters:
             branches:
-              only: master
+              only: dev
