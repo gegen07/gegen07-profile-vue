@@ -39,4 +39,9 @@ workflows:
   build:
     jobs:
       - "build-app"
-      - "app-deploy"
+      - app-deploy:
+          requires:
+            - build-app
+          filters:
+            branches:
+              only: master
