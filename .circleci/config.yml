@@ -8,10 +8,10 @@ jobs:
       - checkout
       - run:
         name: "Installing dependencies"
-        command: npm install
+        command: "npm install"
       - run:
         name: "Building the project"
-        command: npm run build
+        command: "npm run build"
       - persist_to_workspace:
         root: dist/
   "app-deploy":
