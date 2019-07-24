@@ -33,8 +33,8 @@
         <v-card class="elevation-2">
           <v-container>
             <v-layout row wrap>
-              <v-card-title class="headline">{{ $t("education.academic.grade-course")  }}</v-card-title>
-              <v-card-text class="body-1 font-weight-regular">2019 - 2023</v-card-text>
+              <v-card-title class="headline">{{ $t("education.academic.grade-course.description")  }}</v-card-title>
+              <v-card-text class="body-1 font-weight-regular">{{ $t("education.academic.grade-course.time")  }}</v-card-text>
             </v-layout>
           </v-container>
         </v-card>
