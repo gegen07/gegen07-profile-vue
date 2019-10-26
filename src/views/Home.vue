@@ -8,7 +8,7 @@
           <Extra id="extra-education"/>
           <languages id="languages" />
           <Experience id="experience"/>
-          <Skills id="skills"/>
+          <!-- <Skills id="skills"/> -->
         </v-flex>
       </v-layout>
     </v-container>
