@@ -1,6 +1,6 @@
 <template>
   <v-toolbar color="primary" fixed app>
-    <router-link to="/">
+    <router-link to="/blog">
       <v-toolbar-title @click="$vuetify.goTo('#landing', { offset: -100 })" class="grey--text text--lighten-3">Germano Barcelos</v-toolbar-title>
     </router-link>
     <v-spacer></v-spacer>
@@ -18,7 +18,7 @@
         {{ $t("navbar.link-education.name") }}
       </v-btn>
       <v-btn class="grey--text text--lighten-3 hidden-sm-and-down" @click="$vuetify.goTo('#experience', { offset: -100 })" flat>{{ $t("navbar.link-experience") }}</v-btn>
-      <v-btn class="grey--text text--lighten-3 hidden-sm-and-down" @click="$vuetify.goTo('#skills', { offset: +25 })" flat>{{ $t("navbar.link-skills") }}</v-btn>
+      <!-- <v-btn class="grey--text text--lighten-3 hidden-sm-and-down" @click="$vuetify.goTo('#skills', { offset: +25 })" flat>{{ $t("navbar.link-skills") }}</v-btn> -->
       <v-menu bottom>
         <v-btn
           slot="activator"
