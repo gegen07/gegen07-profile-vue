@@ -1,23 +1,27 @@
 <template>
   <v-content>
-    <v-container>
-      <div id="blog-post">
-        <h1 class="font-title">{{ post.data.title }}</h1>
-        <p>Posted by {{ post.data.author.first_name }} {{ post.data.author.last_name }} on {{ parseDate(post.data.published) }} </p>
-        <div v-html="post.data.body"></div>
-        <router-link
-          v-if="post.meta.previous_post"
-          :to="/blog/ + post.meta.previous_post.slug"
-          class="button">
-          {{ post.meta.previous_post.title }}
-        </router-link>
-        <router-link
-          v-if="post.meta.next_post"
-          :to="/blog/ + post.meta.next_post.slug"
-          class="button">
-          {{ post.meta.next_post.title }}
-        </router-link>
-      </div>
+    <v-container justify-center grid-list-xs fill-height>
+      <v-layout align-center justify-center row wrap>
+        <v-flex xs12 lg8 id="blog-post">
+          <h1 class="display-">{{ post.data.title }}</h1>
+          <v-spacer></v-spacer>
+          <p> Posted on: {{ parseDate(post.data.published) }} </p>
+          <v-divider></v-divider>
+          <div class="mt-5" v-html="post.data.body"></div>
+          <router-link
+            v-if="post.meta.previous_post"
+            :to="/blog/ + post.meta.previous_post.slug"
+            class="button">
+            {{ post.meta.previous_post.title }}
+          </router-link>
+          <router-link
+            v-if="post.meta.next_post"
+            :to="/blog/ + post.meta.next_post.slug"
+            class="button">
+            {{ post.meta.next_post.title }}
+          </router-link>
+        </v-flex>
+      </v-layout>
     </v-container>
   </v-content>
 </template>
@@ -41,7 +45,7 @@ export default {
         })
     },
     parseDate: function (date) {
-      var dateParsed = new Date(date).toLocaleDateString('pt-BR', {
+      var dateParsed = new Date(date).toLocaleDateString('en-US', {
         day: 'numeric',
         month: 'short',
         year: 'numeric',

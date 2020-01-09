@@ -4,7 +4,7 @@
       <p class="display-1" color="brown">{{ $t("education.academic.description")  }}</p>
       <v-timeline>
         <v-timeline-item
-          color="indigo lighten-2"
+          color="accent lighten-2"
           medium
         >
           <span class="headline" slot="opposite">{{ $t("education.academic.grade-course.time") }}</span>
@@ -15,7 +15,7 @@
           </v-card>
         </v-timeline-item>
         <v-timeline-item
-          color="indigo lighten-2"
+          color="accent lighten-2"
           medium
         >
           <span class="headline" slot="opposite">2016-2018</span>
