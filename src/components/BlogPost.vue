@@ -1,8 +1,8 @@
 <template>
   <v-content>
     <v-container justify-center grid-list-xs fill-height>
-      <v-layout align-center justify-center row wrap>
-        <v-flex xs12 lg8 id="blog-post">
+      <v-layout justify-center row wrap>
+        <v-flex xs12 lg8 class="mt-5" id="blog-post">
           <h1 class="display-">{{ post.data.title }}</h1>
           <v-spacer></v-spacer>
           <p> Posted on: {{ parseDate(post.data.published) }} </p>
