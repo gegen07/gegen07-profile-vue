@@ -17,7 +17,7 @@
           <h2 class="display-2 font-weight-condensed-light mb-3">
             Germano Barcelos
           </h2>
-          <p class="headline font-weight-thin">
+          <p class="headline font-weight-light">
             {{ $t("home.description") }}
           </p>
         </v-flex>

@@ -8,6 +8,10 @@
     "link-experience": "Experience",
     "link-skills": "Skills"
   },
+  "blog": {
+    "head": "Notes",
+    "posted": "Posted on:" 
+  },
   "home": {
     "description": "Backend Developer and Aspirant in Data Science"
   },
