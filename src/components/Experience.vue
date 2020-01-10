@@ -4,7 +4,7 @@
       <p class="display-1" color="brown">{{ $t("experience.description") }}</p>
       <v-timeline>
         <v-timeline-item
-          color="indigo lighten-2"
+          color="accent lighten-2"
           medium
         >
           <span class="headline" slot="opposite">{{ $t("experience.exp1.time") }}</span>

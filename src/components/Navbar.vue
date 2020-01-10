@@ -5,20 +5,21 @@
     </router-link>
     <v-spacer></v-spacer>
     <v-toolbar-items class="fill-height">
+      <v-btn class="grey--text text--lighten-3" to="/blog" flat> Blog </v-btn>
       <v-btn class="grey--text text--lighten-3" flat target="_blank" v-bind:href="linkCV()">
         CV
       </v-btn>
-      <v-btn
+      <!-- <v-btn
         color="primary"
         dark
         flat
         class="hidden-sm-and-down grey--text text--lighten-3"
         @click="$vuetify.goTo('#education', { offset: -75 })"
-      >
+        > 
         {{ $t("navbar.link-education.name") }}
-      </v-btn>
-      <v-btn class="grey--text text--lighten-3 hidden-sm-and-down" @click="$vuetify.goTo('#experience', { offset: -100 })" flat>{{ $t("navbar.link-experience") }}</v-btn>
-      <v-btn class="grey--text text--lighten-3 hidden-sm-and-down" @click="$vuetify.goTo('#skills', { offset: +25 })" flat>{{ $t("navbar.link-skills") }}</v-btn>
+      </v-btn> -->
+      <!-- <v-btn class="grey--text text--lighten-3 hidden-sm-and-down" @click="$vuetify.goTo('#experience', { offset: -100 })" flat>{{ $t("navbar.link-experience") }}</v-btn> -- >
+      <!-- <v-btn class="grey--text text--lighten-3 hidden-sm-and-down" @click="$vuetify.goTo('#skills', { offset: +25 })" flat>{{ $t("navbar.link-skills") }}</v-btn> -->
       <v-menu bottom>
         <v-btn
           slot="activator"

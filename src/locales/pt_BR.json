@@ -8,6 +8,11 @@
     "link-experience": "Experiência",
     "link-skills": "Habilidades"
   },
+  "blog": {
+    "head": "Notas",
+    "posted": "Publicado em:",
+    "sponsor": "Patrocinado por "
+  },
   "home": {
     "description": "Desenvolvedor Backend e Aspirante em Ciência de Dados"
   },

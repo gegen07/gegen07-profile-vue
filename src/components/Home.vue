@@ -14,7 +14,7 @@
           </v-avatar>
         </v-flex>
         <v-flex xs12>
-          <h2 class="display-2 mb-3">
+          <h2 class="display-2 font-weight-condensed-light mb-3">
             Germano Barcelos
           </h2>
           <p class="headline font-weight-light">
