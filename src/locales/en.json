@@ -10,7 +10,8 @@
   },
   "blog": {
     "head": "Notes",
-    "posted": "Posted on:" 
+    "posted": "Posted on:",
+    "sponsor": "Sponsored by"
   },
   "home": {
     "description": "Backend Developer and Aspirant in Data Science"

@@ -10,7 +10,8 @@
   },
   "blog": {
     "head": "Notas",
-    "posted": "Publicado em:" 
+    "posted": "Publicado em:",
+    "sponsor": "Patrocinado por "
   },
   "home": {
     "description": "Desenvolvedor Backend e Aspirante em Ciência de Dados"
