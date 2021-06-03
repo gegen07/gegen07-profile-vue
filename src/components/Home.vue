@@ -1,6 +1,5 @@
 <template>
-  <v-content>
-    <v-container fluid justify-center grid-list-xs text-xs-center fill-height>
+    <v-container justify-center grid-list-xs text-xs-center>
       <v-layout
         align-center justify-center row wrap
       >
@@ -9,12 +8,13 @@
             :tile="false"
             :size="256"
             color="grey lighten-4"
+            class="mb-3"
           >
             <img src="https://avatars3.githubusercontent.com/u/26390780?v=4" alt="avatar">
           </v-avatar>
         </v-flex>
         <v-flex xs12>
-          <h2 class="display-2 font-weight-condensed-light mb-3">
+          <h2 class="display-1 font-weight-condensed mb-3">
             Germano Barcelos
           </h2>
           <p class="headline font-weight-light">
@@ -47,7 +47,6 @@
         </v-flex>
       </v-layout>
     </v-container>
-  </v-content>
 </template>
 
 <script>
