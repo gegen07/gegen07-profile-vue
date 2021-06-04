@@ -39,7 +39,7 @@
                 class="mx-auto mt-0 mb-3"
                 v-for="(post,index) in posts"
                 :key="post.slug + '_' + index">
-                <router-link style="display: text-decoration:none;" :to="'/blog/' + post.slug">
+                <router-link style="display: inline-block;text-decoration:none;" :to="'/blog/' + post.slug">
                     <v-flex class="mb-3">
                       <p class="font-weight-black headline text--primary">{{ post.title }}</p>
                       <p class="subtitle-1 font-weight-light text--primary">{{ post.summary }}</p>
