@@ -13,7 +13,7 @@
                 <v-select
                   v-model="selectedItems"
                   :items="categories"
-                  item-text="name" item-value="name"
+                  item-text="name" item-value="slug"
                   prepend-icon="filter_list"
                   small-chips
                   label="Tags"
@@ -93,6 +93,7 @@ export default {
         })
       } else {
         let filterType = this.selectedItems
+        console.log(filterType)
         butter.post.list({
           page: this.pagination.page,
           page_size: this.pagination.perpage,
