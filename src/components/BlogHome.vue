@@ -10,54 +10,56 @@
             <v-divider></v-divider>
             <v-layout row wrap>
               <v-flex xs10>
-                <v-combobox
+                <v-select
                   v-model="selectedItems"
                   :items="categories"
                   item-text="name" item-value="name"
-                  label="Tags"
-                  chips
-                  clearable
                   prepend-icon="filter_list"
-                  solo
-                  single  
+                  small-chips
+                  label="Tags"
+                  persistent-hint
+                  clearable
                 >
                   <template v-slot:selection="data">
                     <v-chip
                       :selected="data.selected"
                       :key="JSON.stringify(data.item)"
-                      close
-                      @input="remove(data.item)"
+                      @input="data.item"
                     >
                       <strong>{{ data.item.name }}</strong>&nbsp;
                     </v-chip>
                   </template>
-                </v-combobox>
+                </v-select>
               </v-flex>
               <v-flex xs2>
-                <v-btn @click="filterCategories()">Filter</v-btn>
+                <v-btn @click="filterCategories()">{{ $t("blogHome.buttonFilter") }}</v-btn>
+              </v-flex>
+            <!-- TODO: Create a search for keywords. -->
+              <v-flex xs12
+                class="mx-auto mt-0 mb-3"
+                v-for="(post,index) in posts"
+                :key="post.slug + '_' + index">
+                <router-link :to="'/blog/' + post.slug">
+                    <v-flex class="mb-3">
+                      <p class="font-weight-black headline text--primary">{{ post.title }}</p>
+                      <p class="subtitle-1 font-weight-light text--primary">{{ post.summary }}</p>
+                      <p class="caption font-italic font-weight-light">  {{ $t("blog.posted") }} {{ parseDate(post.published) }} </p>
+                    </v-flex>
+                </router-link>
+                <v-divider></v-divider>
+              </v-flex>
+              <v-flex class="text-xs-center">
+                <v-pagination
+                  v-model="pagination.page"
+                  :length="Math.ceil(pagination.total/pagination.perpage)"
+                ></v-pagination>
               </v-flex>
             </v-layout>
-            <!-- TODO: Create a search for keywords. -->
-            <v-flex xs12
-              class="mx-auto mt-5 mb-3"
-              v-for="(post,index) in posts"
-              :key="post.slug + '_' + index">
-              <router-link :to="'/blog/' + post.slug">
-                  <v-flex class="mb-3">
-                    <p class="font-weight-black headline text--primary">{{ post.title }}</p>
-                    <p class="subtitle-1 font-weight-light text--primary">{{ post.summary }}</p>
-                    <p class="caption font-italic font-weight-light">  {{ $t("blog.posted") }} {{ parseDate(post.published) }} </p>
-                  </v-flex>
-              </router-link>
-              <v-divider></v-divider>
-            </v-flex>
           </v-flex>
         </v-layout>
       </v-container>
     </v-content>
-
   </v-layout>
-  
 </template>
 
 <script>
@@ -67,59 +69,54 @@ export default {
   name: 'blog-home',
   data () {
     return {
+      metadata: {},
       page_title: 'Blog',
       posts: [],
       categories: [],
-      selectedItems: []
+      selectedItems: [],
+      pagination: {
+        page: 1,
+        total: 1,
+        perpage: 10
+      }
     }
   },
   methods: {
-    remove (item) {
-      this.categories.splice(this.categories.indexOf(item), 1)
-      this.categories = [...this.categories]
-    },
     filterCategories: function () {
-      console.log(this.selectedItems)
-      if (this.selectedItems == undefined || this.selectedItems.length==0) {
+      if (this.selectedItems === undefined || this.selectedItems.length === 0) {
         butter.post.list({
-          page: 1,
-          page_size: 5
+          page: this.pagination.page,
+          page_size: this.pagination.perpage
         }).then(res => {
+          this.pagination.total = res.data.meta.count
           this.posts = res.data.data
         })
       } else {
-        let filterType = this.selectedItems.slug
+        let filterType = this.selectedItems
         butter.post.list({
-          page: 1,
-          page_size: 5,
+          page: this.pagination.page,
+          page_size: this.pagination.perpage,
           category_slug: filterType
         }).then(res => {
+          this.pagination.total = res.data.meta.count
           this.posts = res.data.data
+          console.log(filterType)
         })
       }
     },
     getPosts () {
       butter.post.list({
-        page: 1,
-        page_size: 5
+        page: this.pagination.page,
+        page_size: this.pagination.perpage
       }).then(res => {
+        this.pagination.total = res.data.meta.count
         this.posts = res.data.data
       })
     },
-    getCategories() {
+    getCategories () {
       butter.category.list()
         .then(res => {
-          console.log('List of Categories:')
-          this.categories=res.data.data
-          console.log(this.categories)
-        })
-    },
-    getPostsByCategory(category) {
-      butter.category.retrieve(category, {
-          include: 'recent_posts'
-        })
-        .then(res => {
-          this.posts = res.data.data
+          this.categories = res.data.data
         })
     },
     parseDate: function (date) {
@@ -133,7 +130,7 @@ export default {
       return dateParsed
     }
   },
-  created () {
+  mounted: function () {
     this.getPosts()
     this.getCategories()
   }

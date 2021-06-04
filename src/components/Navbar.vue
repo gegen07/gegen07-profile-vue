@@ -5,7 +5,7 @@
     </router-link>
     <v-spacer></v-spacer>
     <v-toolbar-items class="fill-height">
-      <v-btn class="grey--text text--lighten-3" to="/about" flat> Sobre </v-btn>
+      <!-- <v-btn class="grey--text text--lighten-3" to="/about" flat> Sobre </v-btn> -->
       <v-btn class="grey--text text--lighten-3" to="/blog" flat> Blog </v-btn>
       <v-btn class="grey--text text--lighten-3" flat target="_blank" v-bind:href="linkCV()">
         CV
@@ -48,7 +48,7 @@ export default {
     langs: [
       { name: 'English', id: 'en' },
       { name: 'Português', id: 'pt_BR' }
-    ],
+    ]
   }),
   methods: {
     changeLocale (item) {

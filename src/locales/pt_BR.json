@@ -51,5 +51,9 @@
       "time": "6 meses - 2018",
       "description": "Trabalhei com C# para transformar o sistema Desktop para sistema web. Para isso tive que arquitetei o sistema com o DDD. Também desenvolvi os códigos do SQLServer utilizando a ferramenta de migrations a partir dos domínios definidos. A infraestrutura foi desenvolvida com Docker e Plataforma da Google Cloud."
     }
+  },
+  "blogHome": {
+    "placeholderComboBox": "Categorias",
+    "buttonFilter": "Filtrar"
   }
 }

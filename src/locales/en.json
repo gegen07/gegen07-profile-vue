@@ -51,5 +51,9 @@
       "time": "6 months - 2018",
       "description": "I worked with C# to change desktop platform of Progetec to Web System. To conclude this project I have to architect the system with DDD, besides that I developed SQLServer code using migrations and ASP.Net Core. The infrastructure was developed with Docker and Google Cloud Platform."
     }
+  },
+  "blogHome": {
+    "placeholderComboBox": "Categories",
+    "buttonFilter": "Filter"
   }
 }
