@@ -71,10 +71,6 @@ export default {
 
 <style>
 
-@import url('https://fonts.googleapis.com/css?family=Lato:900&display=swap')
-
-.font-title {
-  font-family: 'Lato', sans-serif
-}
+@import url('https://fonts.googleapis.com/css?family=Lato:900&display=swap');
 
 </style>
