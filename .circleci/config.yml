@@ -51,6 +51,8 @@ workflows:
       - app-deploy:
           requires:
             - build-app
-          filters:
-            branches:
-              only: dev
+          branches:
+            ignore:
+              - master
+              - hugo
+              
