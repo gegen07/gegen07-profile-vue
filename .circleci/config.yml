@@ -3,7 +3,7 @@ version: 2
 jobs: 
   "build-app":
     docker:
-      - image: circleci/node:latest
+      - image: circleci/node:15.10.0
     steps:
       - checkout
       - run: npm install
