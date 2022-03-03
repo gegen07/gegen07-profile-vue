@@ -1,5 +1,6 @@
 <template>
-    <v-container justify-center grid-list-xs text-xs-center>
+  <v-layout>
+    <v-container fill-height grid-list-xs text-xs-center>
       <v-layout
         align-center justify-center row wrap
       >
@@ -47,6 +48,7 @@
         </v-flex>
       </v-layout>
     </v-container>
+  </v-layout>
 </template>
 
 <script>

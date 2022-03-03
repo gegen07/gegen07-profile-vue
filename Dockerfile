@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:15.10.0
 
 WORKDIR /home/app
 
