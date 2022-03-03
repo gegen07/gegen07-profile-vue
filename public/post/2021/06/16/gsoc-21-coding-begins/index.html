@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GSOC &#39;21 - Coding Begins | A minimal Hugo website</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/css/fonts.css">
+
+    <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">GSOC &lsquo;21 - Coding Begins</span></h1>
+
+<p class="terms">
+    
+    
+    Categories: <a href="/categories/gsoc">GSOC</a> 
+    
+    
+    
+    Tags: <a href="/tags/gsoc">GSOC</a> 
+    
+    
+</p>
+</div>
+
+<main>
+<h1 id="introduction">Introduction</h1>
+<p>The Coding phase has begun. In this post, I write about what I&rsquo;ve done in the first week.</p>
+<h1 id="first-week">First Week</h1>
+<p>I started the coding phase forking the spopt repository and create a new branch to keep my work organized and safe following the open-source practice. You can check the branch of forked repo here.</p>
+<p>Following my proposal, I could have coded the tests for all 4 models. However, I didn&rsquo;t have any experience with tests, so my mentors and I decided to start coding the classes firstly, then I will write the tests. For the first week, I coded all 4 models using an optimization package named PULP in jupyter notebook to familiarize myself with the facility location problems and apply the concepts and formulas that I read through the weeks ago.</p>
+<p>To write the models with PULP I used the example coded by one of my mentors. This example is also a notebook that computes the 4 models, there are points that were simulated in spatial relationship with a shapefile provided from an example PySAL repository.</p>
+<p>It was awesome to create by myself something that I read in books and prove by examples the models&rsquo; theories such as p-center. This model was the worst in performance but it was expected since the literature cleared that it contains an order of $n^2$ variables. Therefore, solving it takes more time than the others models that I already mentioned in this series of posts.</p>
+<h1 id="my-studies">My Studies</h1>
+<p>The studies can&rsquo;t stop. I start reading the geographic data science book [1] written by ljwolf, sjsrey and darribas. It has been a great experience, I&rsquo;m getting to know the environment and the packages developed by the org. Moreover, I read the article [2] that was publicated on 1st June, and it was overwhelming since GIScience is a newer area for me and there are a lot of concepts that I haven&rsquo;t known yet. One thing that I learned through my life is more I read less I know, so it has been exciting being part of GSoC.</p>
+<p>[1] Geographic Data Science Book - Sergio J. Rey, Dani Arribas-Bel, Levi J. Wolf</p>
+<p>[2] The PySAL Ecosystem: Philosophy and Implementation - Sergio J. Rey, Luc Anselin, Pedro Amaral, Dani Arribas-Bel, Renan Xavier Cortes, James David Gaboardi, Wei Kang, Elijah Knaap, Ziqi Li, Stefanie Lumnitz, Taylor M. Oshan, Hu Shao, Levi John Wolf</p>
+
+</main>
+
+  <footer>
+  <script defer src="//yihui.org/js/math-code.js"></script>
+<script defer src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script defer src="//yihui.org/js/center-img.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-155981287-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "gegen07" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  
+  <hr/>
+  <a href="https://github.com/gegen07">Github</a> | <a href="https://twitter.com/gegen_07">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

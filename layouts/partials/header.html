@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+
+    {{ range .Site.Params.custom_css -}}
+        <link rel="stylesheet" href="{{ . | absURL }}">
+    {{- end }}
+
+    {{ range .Site.Params.custom_fonts -}}
+        <link rel="stylesheet" href="{{ . | absURL }}">
+    {{- end }}
+
+    {{ partial "head_custom.html" . }}
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+    <hr/>
+    </nav>

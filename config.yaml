@@ -1,0 +1,41 @@
+baseurl: "/"
+languageCode: "en-us"
+title: "A minimal Hugo website"
+theme: "hugo-xmin"
+googleAnalytics: "UA-155981287-1"
+disqusShortname: "gegen07"
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+footnotereturnlinkcontents: "↩"
+publishdir: public
+
+permalinks:
+  note: "/note/:year/:month/:day/:slug/"
+  post: "/post/:year/:month/:day/:slug/"
+
+menu:
+  main:
+    - name: Home
+      url: ""
+      weight: 1
+    - name: About
+      url: "about/"
+      weight: 2
+    - name: Categories
+      url: "categories/"
+      weight: 3
+    - name: Tags
+      url: "tags/"
+      weight: 4
+
+params:
+  description: "A website built through Hugo and blogdown."
+  footer: "[Github](https://github.com/gegen07) | [Twitter](https://twitter.com/gegen_07)"
+  custom_css: ["css/style.css"]
+  custom_fonts: ["css/fonts.css"]
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: true

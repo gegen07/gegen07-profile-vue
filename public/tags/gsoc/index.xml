@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GSOC on A minimal Hugo website</title>
+    <link>/tags/gsoc/</link>
+    <description>Recent content in GSOC on A minimal Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A New Facility Location Open Source Approach</title>
+      <link>/post/2021/08/05/a-new-facility-location-open-source-approach/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/08/05/a-new-facility-location-open-source-approach/</guid>
+      <description>Facility Location is a great topic that appeared years ago with the industrial revolution. This evolved nice questions about the optimal places to place a factory to reduce transportation costs, retail centers aiming for more revenue. Along the time researchers developed other models that helped to improve the results of past problems and allow to think in another problem likewise the covering problem: how to arrange communication towers given a set of demand points seeking to minimize the number of towers and so the cost to build new towers.</description>
+    </item>
+    
+    <item>
+      <title>GSOC &#39;21 - Fifth Week</title>
+      <link>/post/2021/07/12/gsoc-21-fifth-week/</link>
+      <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/07/12/gsoc-21-fifth-week/</guid>
+      <description>Summary In summary, my fifth week was used to discover and study. This GSOC is requiring discipline to study so much, but I think it has been a nice experience. Let&amp;rsquo;s get it on!
+Meeting I think that I haven&amp;rsquo;t explained about the meeting yet. It occurs weekly (in my case, specifically on Thursdays) and is attended by all mentors if they are available. We discuss topics about the project and how things are going.</description>
+    </item>
+    
+    <item>
+      <title>GSOC &#39;21 - Fourth Week</title>
+      <link>/post/2021/07/11/gsoc-21-fourth-week/</link>
+      <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/07/11/gsoc-21-fourth-week/</guid>
+      <description>Summary In this blog post, I write about what I did in my fourth week. In summary, I developed P-Center and P-Median models and added tests to them. I also worked on distances metrics.
+Optimization Models So far, I have created classes to coverage optimization models (MCLP and LSCP). Following my proposal, I am supposed to code MCLP, LSCP, P-Center, and P-Median. Thus, my mentors assigned me the task of coding the last two optimization models this week and add tests to them.</description>
+    </item>
+    
+    <item>
+      <title>GSOC &#39;21 - Third Week</title>
+      <link>/post/2021/07/02/gsoc-21-third-week/</link>
+      <pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/07/02/gsoc-21-third-week/</guid>
+      <description>Summary In this post, I write about my experience writing tests for the first of my entire life.
+Tests So, tests. What is a test? Where they live and what they eat?
+I will explain a little what tests are and why you should learn to contribute to open source. It&amp;rsquo;s a broad topic and if you want to go deep in this area, you can take a look at the Atlassian blog.</description>
+    </item>
+    
+    <item>
+      <title>GSOC &#39;21 - Second Week</title>
+      <link>/post/2021/07/01/gsoc-21-second-week/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/07/01/gsoc-21-second-week/</guid>
+      <description>Summary In this post, I write about my work through the second week on GSoC. If you didn&amp;rsquo;t read the lasts posts, I recommend you read to know what is GSoC program and what I&amp;rsquo;m working with.
+Second Week Last week, I wrote the four models of facility location using Jupyter notebook, and for the second week, as I talked with my mentors, it was time to start writing classes using OOP (Object Oriented Programming).</description>
+    </item>
+    
+    <item>
+      <title>GSOC &#39;21 - Coding Begins</title>
+      <link>/post/2021/06/16/gsoc-21-coding-begins/</link>
+      <pubDate>Wed, 16 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/06/16/gsoc-21-coding-begins/</guid>
+      <description>Introduction The Coding phase has begun. In this post, I write about what I&amp;rsquo;ve done in the first week.
+First Week I started the coding phase forking the spopt repository and create a new branch to keep my work organized and safe following the open-source practice. You can check the branch of forked repo here.
+Following my proposal, I could have coded the tests for all 4 models. However, I didn&amp;rsquo;t have any experience with tests, so my mentors and I decided to start coding the classes firstly, then I will write the tests.</description>
+    </item>
+    
+    <item>
+      <title>GSOC &#39;21 - Community Bonding</title>
+      <link>/post/2021/06/06/gsoc-21-community-bonding/</link>
+      <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/06/06/gsoc-21-community-bonding/</guid>
+      <description>Introduction Hey folks! In this blog post, I write about my two first weeks after getting accepted into GSoC.
+First Meeting The community bonding phase is the first part of the program for student to get to know the mentors (Levi Wolf, James Gaboardi, and Qunshan Zhao) and the community that will be part of. In the first week, I had the first meeting and it was just to introduce ourselves, discuss topics about the project.</description>
+    </item>
+    
+    <item>
+      <title>GSOC &#39;21 Student, Yay!</title>
+      <link>/post/2021/06/06/gsoc-21-student-yay/</link>
+      <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/06/06/gsoc-21-student-yay/</guid>
+      <description>Introduction My proposal was accepted in GSOC 21&amp;rsquo;. I&amp;rsquo;ll be starting to write weekly about my improvements as a diary of my work done during the week. However, at first, what is GSOC? And what my proposal is about?
+What is GSOC? GSoC is an abbreviation of Google Summer of Code and it&amp;rsquo;s a program that aims students all over the world, to get involved in open source development. The coding program runs during North Summer, hence it starts over May and ends in the middle of August.</description>
+    </item>
+    
+  </channel>
+</rss>

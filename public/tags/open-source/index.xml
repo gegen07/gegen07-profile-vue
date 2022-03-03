@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open-Source on A minimal Hugo website</title>
+    <link>/tags/open-source/</link>
+    <description>Recent content in Open-Source on A minimal Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A New Facility Location Open Source Approach</title>
+      <link>/post/2021/08/05/a-new-facility-location-open-source-approach/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/08/05/a-new-facility-location-open-source-approach/</guid>
+      <description>Facility Location is a great topic that appeared years ago with the industrial revolution. This evolved nice questions about the optimal places to place a factory to reduce transportation costs, retail centers aiming for more revenue. Along the time researchers developed other models that helped to improve the results of past problems and allow to think in another problem likewise the covering problem: how to arrange communication towers given a set of demand points seeking to minimize the number of towers and so the cost to build new towers.</description>
+    </item>
+    
+  </channel>
+</rss>

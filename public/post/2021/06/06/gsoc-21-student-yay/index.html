@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GSOC &#39;21 Student, Yay! | A minimal Hugo website</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/css/fonts.css">
+
+    <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">GSOC &lsquo;21 Student, Yay!</span></h1>
+
+<p class="terms">
+    
+    
+    Categories: <a href="/categories/gsoc">GSOC</a> 
+    
+    
+    
+    Tags: <a href="/tags/gsoc">GSOC</a> 
+    
+    
+</p>
+</div>
+
+<main>
+<h1 id="introduction">Introduction</h1>
+<p>My proposal was accepted in GSOC 21&rsquo;. I&rsquo;ll be starting to write weekly about my improvements as a diary of my work done during the week. However, at first, what is GSOC? And what my proposal is about?</p>
+<h1 id="what-is-gsoc">What is GSOC?</h1>
+<p>GSoC is an abbreviation of Google Summer of Code and it&rsquo;s a program that aims students all over the world, to get involved in open source development. The coding program runs during North Summer, hence it starts over May and ends in the middle of August. These dates depend on the year schedule which is announced at the GSoC site. </p>
+<p>For students, there are some steps before you got a proposal acceptance. Firstly, you should see the organizations and projects that are proposed by themself, all of the projects have mentors that will help you with some improvements and discussions to guide you through the program. After that, you&rsquo;ll choose a project, start writing the proposal and submit it. Then, you receive the answer if you got accepted or not.</p>
+<h1 id="my-proposal">My Proposal</h1>
+<p>The title of my proposal is Open Source Facility Location Modeling (spopt) Development. The organization that I will work with is called PySAL. PySAL is developing an ecosystem for geospatial analysis and modeling with Python. The spopt that I will work package is already released and it provides some analysis about regionalization. However, I will work with the facility location problem. This problem has an example that simplifies the understanding of it.</p>
+<p>Suppose that a government discovers that the population of the city is not covered in totality with ambulances attendance. Therefore, the government wants to cover all population or cover with budget restrictions. The government already planned some potential places to distribute new ambulances trucks needed to all demand nodes be attended within the service time required, but they want to spend minimum money. This problem is known as Location Set Covering Problem and can be described in math notation with summations but is not the objective of this post. </p>
+<p>In summary, the facility location is a huge problem that cannot be solved optimally generically. There is not an algorithm that solves classes of these problems, so it depends on optimization techniques and linear programming to get solved, it&rsquo;s an NP-Hard problem. Otherwise, there are already packages developed that solve optimization problems using linear programming techniques, like PULP, Gurobi, and others. Thus, my proposal has an objective to solve facility location problems using one of these optimization packages; Location Set Covering Problem, Maximal Set Covering Problem, P-median, and P-center, specifically. In the future, it can support more classes of problems, like continuous coverage, partial coverage, capacitated vehicle routing, and a lot of others problems. </p>
+<h1 id="my-expectations">My expectations</h1>
+<p>I expect to learn about the organization, how the open-source community works, git best practices, open-source development practices. Besides that, I also expect to learn more about linear programming, mixed-integer programming, and facility location problems.</p>
+<h1 id="tip">Tip</h1>
+<p>If you want to enter GSoC next year begin searching for projects accepted in the last years and studying the organizations that you liked most. Furthermore, begin contributing with some small issues such as documentation issues, bug fixes. This will help you a lot to already get involved with open source projects.</p>
+
+</main>
+
+  <footer>
+  <script defer src="//yihui.org/js/math-code.js"></script>
+<script defer src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script defer src="//yihui.org/js/center-img.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-155981287-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "gegen07" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  
+  <hr/>
+  <a href="https://github.com/gegen07">Github</a> | <a href="https://twitter.com/gegen_07">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

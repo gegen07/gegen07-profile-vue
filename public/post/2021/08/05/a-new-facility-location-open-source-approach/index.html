@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A New Facility Location Open Source Approach | A minimal Hugo website</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/css/fonts.css">
+
+    <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">A New Facility Location Open Source Approach</span></h1>
+
+<p class="terms">
+    
+    
+    Categories: <a href="/categories/gsoc">GSOC</a> 
+    
+    
+    
+    Tags: <a href="/tags/gsoc">GSOC</a> <a href="/tags/open-source">Open-Source</a> 
+    
+    
+</p>
+</div>
+
+<main>
+<p>Facility Location is a great topic that appeared years ago with the industrial revolution. This evolved nice questions about the optimal places to place a factory to reduce transportation costs, retail centers aiming for more revenue. Along the time researchers developed other models that helped to improve the results of past problems and allow to think in another problem likewise the covering problem: how to arrange communication towers given a set of demand points seeking to minimize the number of towers and so the cost to build new towers. Other problems arose in a short time such as each tower has a capacity in handling calls or the interference on frequencies when towers are close within a certain distance. </p>
+<p>However, these problems are NP-hard. Therefore for bigger problems and even for specific small problems isn&rsquo;t recommend to use a brute-force algorithm to solve them. Thus authors like Hakimi, Toregas et.al, Church, Revelle, and others modeled these problems using Operations Research, Geography, and many other study areas to solve these problems efficiently.</p>
+<p>The article Open‑source approaches for location cover models: capabilities and efficiency written by Huanfa Chen, Alan T. Murray, and Rui Jiang discuss open source and proprietary software developed with diverse tools: Microsoft Excel (FLP Solver), ArcGIS, R (Maxcovr), and Python (PySpatialOpt) that solve specific facility location models: Location Set Covering Problem (LSCP) and Maximal Coverage Location Problem (MCLP). The first two are commercial software, moreover uses a Tabu Search heuristic to solve the MCLP and LSCP. On the other way, Maxcovr and PySpatialOpt are open-source software and uses an exact approach to solve the same models that commercial libraries solve. The paper discusses the features that each library provides to the user: Maxcovr accepts a user-defined distance matrix, if the matrix is not passed as an argument it calculates the haversine formula, PySpatialOpt doesn&rsquo;t compute the distance matrix, so it must be calculated externally. FLPSolver offers many distance metrics as Euclidean, Manhattan, Big Circle, and others to compute the distance matrix. At last, ArcGIS compute the distance using a network representation that can take a long time to compute distances.</p>
+<p>During the GSoC 2021, advised by Levi J. Wolf, James Gaboardi, and Qunshan Zhao, I contributed to PySAL spopt repository, which is an optimization python package, developing 4 facility location models (LSCP, MCLP, P-Center, P-Median) using an exact wrapper solver named PULP. The module is composed of these models and supports the computation of the distance matrix with different metrics as euclidean, manhattan, squared euclidean, and many others. Besides that, it supports the distance matrix as an argument alike the other open-source software. The module provides the user the possibility to have the values of the objective variable for each model and for the P-Center model it can compute the mean distance of the objective value. As the libraries presented by the paper, the new module developed can compute the percentage of MCLP model coverage.</p>
+<p>For validation purposes, we test the new facility location approach with the same example of the paper. It is used a census tract 205 with centroids and 16 candidate store sites. The objective so is cover the maximum amount of demand points given the population in the 2000 year for each centroid and the budget is limited to place only 4 stores along the area. This problem in other words can be modeled as MCLP. Using the module developed we got:</p>
+<p><img src="https://pysal.org/spopt/_images/notebooks_facloc-real-world_24_0.png" alt="figure of obtained results using MCLP developed during GSOC"></p>
+<p>This graph points to where the government should place the store sites to cover the maximum population in this tract. The percentage covered is 87.76% and 21 points are not covered by any of the stores. Moreover, a notebook in the spopt repository has the application of the four models supported by the new module using the same dataset.  </p>
+<p>One thing to remainder is the solver wrapper PULP used by our module and the PySpatialOpt. PULP gives the possibility to use many solvers like Gurobi, CPLEX, CBC, and other solvers that are available in the machine when executing the code. Therefore the module can be used in such problems that are bigger and demand great resources of a computer.</p>
+<p>We planned in the future, add capacity constraints in models solving an issue that no one of open-source approaches discussed by paper provide to the user. Besides that, we aim to provide a polygon partial coverage, this is another new feature that no library support yet. </p>
+
+</main>
+
+  <footer>
+  <script defer src="//yihui.org/js/math-code.js"></script>
+<script defer src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script defer src="//yihui.org/js/center-img.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-155981287-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "gegen07" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  
+  <hr/>
+  <a href="https://github.com/gegen07">Github</a> | <a href="https://twitter.com/gegen_07">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+
